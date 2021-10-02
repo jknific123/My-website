@@ -10,6 +10,7 @@
     "npm": ">=6.14.15"
   },
   "dependencies": {
+    "bootswatch": "^5.1.1",
     "cookie-parser": "*",
     "debug": "*",
     "express": "*",
