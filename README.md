@@ -1,2 +1,2 @@
 # My-website
-Website which shows end results of my projects.
+Website which will show end results of my side projects.
