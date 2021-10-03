@@ -16,6 +16,7 @@
     "express": "*",
     "hbs": "*",
     "http-errors": "*",
+    "mongoose": "*",
     "morgan": "*"
   }
 }
