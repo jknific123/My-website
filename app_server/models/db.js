@@ -3,12 +3,11 @@ const mongoose = require('mongoose');
 
 var dbURI = 'mongodb://localhost/mywebsite'
 
-
-mongoose.connect(dbURI, {
-    useNewUrlParser: true,
-    useCreateIndex: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false
+mongoose.connect(dbURI, { // z mongoose 6.0 spodnje stvari niso vec potrebne
+    //useNewUrlParser: true,
+    //useCreateIndex: true,
+    //useUnifiedTopology: true,
+    //useFindAndModify: false
 });
 
 mongoose.connection.on('connected', () => {
@@ -48,3 +47,6 @@ process.on('SIGTERM', () => {
         process.exit(0);
     });
 });
+
+require('./locations');
+require('./users');
